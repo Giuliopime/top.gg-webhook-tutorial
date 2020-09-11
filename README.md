@@ -21,7 +21,7 @@ Then put that token in YOUR `config.json` file with the respective `apiToken` ke
   You can do that by running `npm i dblapi.js` from a terminal inside your bot project folder on the VPS.  
 2- Upload the `index.js` file, with the changes you just made, in your VPS Discord bot folder.  
 3- Update the firewall settings to let top.gg connect to the webhook port of your VPS.  
-  In this example we used port 8000 for our webhook, so we'll need to open that port in the firewall settings, in ubuntu we can do like so: `sudo ufw allow 8000`
+  In this example we used port 8000 for our webhook, so we'll need to open that port in the firewall settings, in Ubuntu we can do that with: `sudo ufw allow 8000`
 
 ## Setting up the webhook on top.gg
 1- Go to your bot page on top.gg and hit the edit button.  
