@@ -38,5 +38,3 @@ Restart the bot on your VPS, once you do that and you don't get any error in the
 To do that go on your bot page on top.gg, hit the edit button, scroll down to the `API Options` section and hit the `test` button, now, in your VPS console, the bot should have logged the vote and if you set up the Discord vote channel like in our `index.js` you should have received a message in that channel too.
 
 ## You are all set!
-Time for some self-advertising now ^^  
-Check out my bot on top.gg: https://top.gg/bot/715621848489918495
