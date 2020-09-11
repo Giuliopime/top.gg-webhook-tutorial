@@ -6,11 +6,11 @@ const { token } = require('./config.json');
 // Create Discord Bot Client
 const client = new Discord.Client()
 
-// Variable for the channel were we'll send messages when users vote for the bot
-let channelForWebhooks;
-
 
 // THIS IS THE IMPORTANT PART
+
+// Variable for the channel were we'll send messages when users vote for the bot, this wont be used if you don't set a value for it as we do in the client.once('ready') event in this file
+let channelForWebhooks;
 
 // Get the top.gg API token from the config file
 const { apiToken } = require('./config.json');
