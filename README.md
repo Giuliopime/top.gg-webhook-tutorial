@@ -27,6 +27,6 @@ Then put that token in YOUR `config.json` file with the respective `apiToken` ke
 1- Go to your bot page on top.gg and hit the edit button.  
 2- Scroll down to the `API Options` section (if you don't see it then your bot hasn't been approved yet)  
 3- In the `Webhook URL` field enter: `http://vpsIP:8000/dblwebhook`  
-  Make sure to replace `vpsID` with your actual VPS IP and that the port matches the port in the `index.js` file.  
+  Make sure to replace `vpsIP` with your actual VPS IP and that the port matches the port in the `index.js` file.  
   In this case it is set to 8000 (`const dbl = new DBL(apiToken, { webhookPort: 8000, webhookAuth: 'anyPassword' });`  
 4- In the `Webhook Authorization` field enter the password you used in the `index.js`, in our case `anyPassword`.  
