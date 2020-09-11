@@ -39,4 +39,4 @@ To do that go on your bot page on top.gg, hit the edit button, scroll down to th
 
 ## You are all set!
 Time for some self-advertising now ^^
-#### Check out my bot on top.gg: https://top.gg/bot/715621848489918495
+Check out my bot on top.gg: https://top.gg/bot/715621848489918495
