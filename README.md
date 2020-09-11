@@ -30,3 +30,13 @@ Then put that token in YOUR `config.json` file with the respective `apiToken` ke
   Make sure to replace `vpsIP` with your actual VPS IP and that the port matches the port in the `index.js` file.  
   In this case it is set to 8000 (`const dbl = new DBL(apiToken, { webhookPort: 8000, webhookAuth: 'anyPassword' });`  
 4- In the `Webhook Authorization` field enter the password you used in the `index.js`, in our case `anyPassword`.  
+5- Hit the `save` button to save this settings
+
+
+## Testing
+Restart the bot on your VPS, once you do that and you don't get any error in the console, you can test the webhook.  
+To do that go on your bot page on top.gg, hit the edit button, scroll down to the `API Options` section and hit the `test` button, now, in your VPS console, the bot should have logged the vote and if you set up the Discord vote channel like in our `index.js` you should have received a message in that channel too.
+
+## You are all set!
+Time for some self-advertising now ^^
+#### Check out my bot on top.gg: https://top.gg/bot/715621848489918495
