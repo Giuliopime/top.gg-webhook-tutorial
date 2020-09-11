@@ -13,7 +13,8 @@ Everything that part of the code does is explained with comments inside the file
 - `token`: which is your standard bot token and you can ignore that part if you stored your token in any other way
 
 - `apiToken`: you will need to get this token from top.gg, to do that go to https://top.gg/api/docs#mybots -> click on your bot -> hit generate token or just copy the token if you already generated it previously.  
-Then put that token in YOUR `config.json` file with the respective `apiToken` key, so it would look something like this: `"apiToken": "insert top.gg API token here"`
+Then put that token in YOUR `config.json` file with the respective `apiToken` key, so it would look something like this:  
+`"apiToken": "insert top.gg API token here"`
   
 ## Running the bot on the VPS
 1- Supposing you already uploaded your Discord bot project folder to your VPS and it's running fine, go ahead and install the `dblapi.js` library.
