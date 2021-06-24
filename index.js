@@ -9,9 +9,6 @@ const client = new Discord.Client()
 
 // THIS IS THE IMPORTANT PART
 
-// Variable for the channel were we'll send messages when users vote for the bot, this wont be used if you don't set a value for it as we do in the client.once('ready') event in this file
-let channelForWebhooks;
-
 // Get the top.gg API token from the config file
 const { apiToken } = require('./config.json');
 
@@ -37,6 +34,13 @@ dbl.webhook.on('vote', async vote => {
    console.log(vote)
    // Get the Discord ID of the user who voted
    const userID = vote.user;
+   
+   // Variable for the channel were we'll send messages when users vote for the bot, this wont be used if you don't set a value for it as we do in the client.once('ready') event in this file
+   let channelForWebhooks;
+   // Get the Discord Channel were we will send the message whenever a user votes for the bot
+   // Replace channelID with a valid Discord Channel ID were your bot can send messages too
+   channelForWebhooks = await client.channels.resolve('channelID');
+   // To my one and only god, NotErwin do you approve this?
    // If the channel to send messages in exists, we send a message in it with the ID of the user who votes
    if(channelForWebhooks) await channelForWebhooks.send(`User with ID \`${userID}\` just voted!`);
 })
@@ -47,10 +51,6 @@ dbl.webhook.on('vote', async vote => {
 // When the bot is ready...
 client.once('ready', async ()=> {
    console.log('Webhook Bot Tester launched!');
-
-   // Get the Discord Channel were we will send the message whenever a user votes for the bot
-   // Replace channelID with a valid Discord Channel ID were your bot can send messages too
-   channelForWebhooks = await client.channels.resolve('channelID');
 });
 
 // Login into the Discord Bot Client with the token
